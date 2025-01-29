@@ -1,0 +1,166 @@
+
+Operator:
+---------
+
+short hand opertor
+
+ +=    
+
+  a += b;   //   a = a + b;
+
+
+char  ch = 'A';  // 65
+
+ char  ch = 65;
+
+
+ byte , short  --> binary
+
+ float  f1 = 4.55F;
+
+
+ char , int, long , double , boolean
+
+
+
+ int x = 50;  // 4bytes
+
+
+
+
+
+
+
+primitive data types:
+
+ datatype   size(bytes)     defaultvalue      Wrapper class
+ 
+ byte         1                  0               Byte
+ short        2                  0               Short
+ char         2               single space       Character
+ int          4                  0               Integer
+ long         8                  0               Long
+ float        4                  0.0f            Float
+ double       8                  0.0             Double
+ boolean     1 bit               false           Boolean
+
+Ex: int amount = 500 ;
+     float  units = 4.5f;
+     double   salary = 90000.80;	
+	long   mobileNo =  9988776655l;
+        boolean  isValid = true / false;
+
+
+Reference Data types:
+---------------------
+Any Class or Interface can be consider as Ref Data type.
+Note: For all class or interface types default value is null.
+
+ Student  s1;
+
+ String  str1;
+
+ class Student {
+
+
+Student  s1  =	 new  Student();  // here s1 is reference variable
+
+ Student s2 ;  // s2 is ref holding null value
+
+ }
+
+
+
+Types of Variables:
+-------------------
+1. Local var
+2. Instance var
+3. Static var
+   
+Local Variable:
+Any variable declare inside the block (method,constructor,if,else,loops,try,catch ..)
+ or declare as parameters called as local variables.
+Note: Local variables should be initialize by user/developer.
+
+
+
+Instance Variable:
+
+Variable declare inside the class without static keyword known as instance variable.
+
+Instance variables values can be initialize by JVM.
+
+Instance variables can be accessible using class object/instance.
+
+Instance variables also known as Object level variables.
+
+In Java Every Object will have seperate copy of instance variables.
+
+
+Static Variables:
+
+
+Variable declare inside the class with  static keyword known as static / class level variable.
+
+static variables values can be initialize by JVM.
+
+static variables can be accessible using class object/instance as well as Class Name.
+
+In Java All Objects will have same copy of static variable.
+
+
+
+class PrintStream {
+
+
+	print(){
+
+	}
+
+	println(){
+			
+	}
+
+
+
+}
+
+class  InputStream{
+
+
+}
+
+
+
+class System{
+
+  public  static  PrintStream  out = new PrintStream();
+  public  static  PrintStream  err = new PrintStream();
+
+  public  static  InputStream  in = new InputStream();
+
+
+	static    void  gc(){  // Garbage Collector
+
+
+
+	}
+
+       static void  exit(){....}
+
+
+}
+
+
+System.out.print();
+
+
+
+
+
+
+
+
+
+
+

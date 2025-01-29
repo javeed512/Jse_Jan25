@@ -1,0 +1,98 @@
+
+
+Naming Convections in Java
+---------------------------
+
+package:
+========
+lower case
+
+mypackage ,  pack1 , com.oracle
+java.lang , java.util , java.time
+
+Real time syntax for package:
+domain.company.project.module.submodule
+
+Ex: com.oracle.metrorail.ticketbooking.passanger;
+
+class / interface / enum 
+========================
+Init Cap
+
+Student , Employee , EmployeeService ,  BankAccount
+Ex: Object , String , System , Integer , Scanner
+
+
+constructor:
+=============
+InitCap (same as class name)
+
+Student()  , Employee() , BankAccount()
+
+
+variables or methods:
+=======================
+camel case
+
+variables:
+
+ int account;
+	account = 101;
+ 
+ int accountNumber;
+
+  int    abc123;
+
+  int  123abc; //invalid
+
+
+  double    salary$ = 90000.00;
+
+methods:   int  get();  , int  getAccountNumber();
+
+
+final  variable:
+-----------------
+ final double   PI  = 3.141;
+
+ final  String   IFSC = "HDFC1234";
+
+ final  int X ;
+		X = 99; // INVALID
+
+TOKEN_NUMBER , SECURITY_CODE
+   
+
+Note:  In Java only 2 special characters allowed   i. underscore _   and  ii. doller  $
+
+
+
+
+
+
+
+c-lang:
+
+
+main(){
+
+printf("hello");
+
+}
+
+Java-lang
+
+class HelloWorld
+{
+public static void  main(){  // method
+
+
+
+
+}
+
+}
+
+
+
+

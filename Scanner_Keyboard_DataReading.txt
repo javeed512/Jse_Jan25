@@ -1,0 +1,26 @@
+
+Scanner class
+
+
+ next();  --> one word/string  at a time
+
+ nextLine();  --> one line at a time
+
+ 
+  nextXX();
+
+  nextInt();
+  nextFloat();
+  nextLong();
+  nextDouble(); 
+
+
+Ex:
+
+Enter salary?
+
+
+"50000"  ---->   sc.nextInt();  ---> 50000
+
+
+"4.555"  --->  sc.nextDouble(); ---> 4.555
