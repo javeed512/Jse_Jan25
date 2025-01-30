@@ -1,0 +1,123 @@
+
+Java-8:
+
+java.time.*;
+
+DateTime API 
+
+Application Programming Interface
+Set of Predefined  Interfaces, Classes and methods
+
+
+LocalDate  --> only date
+
+LocalTime --> only time
+
+LocalDateTime  ---> date + time
+
+ZonedDateTime  ---> date + time based on different zones
+
+
+dob = "12-01-2001"
+
+
+
+java.lang.*;
+
+
+class Object {
+
+
+
+	public Object(){
+	
+	}
+
+
+	boolean equals(){
+		..... // compare hashcode of 2 objects
+
+
+		}  
+
+
+}
+
+
+class String extends Object {
+
+
+	boolean equals(){
+		*******  // compare values or content of 2 objects
+	}
+
+
+}
+
+
+Object  obj  =  any class object;
+
+
+--------------------------------------
+Wrapper classes:
+-------------------
+
+final variables:
+MIN_VALUE
+MAX_VALUE
+SIZE
+
+
+parseXXX();  // XXX = Int,Float,Long,Double...
+valueOf();
+toString();
+
+
+
+String:
+--------
+String s = "hello";
+
+concat():  add/concat two strings
+equals(): compare values
+length():  find length of given string
+charAt(0) ---> char at index 0 is h
+indexOf('h')   ---> return index number ie. 0
+equalsIgnoreCase();
+compareTo();  // return integer comparing ASCII Value
+
+"A".equals("a");  // false
+
+"A".equalsIgnoreCase("a");   // true
+
+
+date =  A , B ,C, D , D
+
+"A".compareTo("B");  //  65 - 66  ---> -1
+
+"B".compareTo("D");  // 66 - 68  ---> -2
+
+"D".compareTo("C");  // 68 - 67  ---> 1
+
+"D".compareTo("D");  // 68 - 68 ---> 0 
+
+
+
+
+Java-lang           C-LANG
+
+"tom" --> ['t','o','m','\0']
+
+
+
+"hello";
+
+s1 + "world";
+
+s1 = s1 + "again";
+
+
+StringBuffer or StringBuilder
+
+
+
