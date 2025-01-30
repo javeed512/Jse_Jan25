@@ -1,0 +1,236 @@
+
+
+class Object {
+
+
+	public Object(){
+
+		// allocate memory in heap
+		// generate hashcode
+		// creat copy of instance and initialize default values
+		// and many more
+
+	}
+
+
+	public String toString();  // print hashcode
+         equals();
+	hashcode();
+	clone();
+	getClass();
+	finalize();
+
+
+
+}
+
+class String  extends Object{
+
+ public String	toString(){  // method overriding
+			
+		// print string value
+
+	}
+
+
+
+}
+
+
+
+class  Student  extends Object{
+
+	public String  toString(){
+
+
+	}
+
+
+
+}
+
+
+
+
+
+Inheritance:
+class Machine extends Object{
+
+
+}
+
+
+class Printer extends Machine{
+
+
+}
+
+class Scanner  extends Machine{
+
+
+}
+
+Multi Level Inheritance
+
+   Object
+     |
+   Machine
+     |
+   Printer
+
+
+
+class Printer extends Machine , Device{  // multiple inheritance not possible classes
+
+
+}
+
+
+Polymorphism:
+-------------
+1. static  or compile time polymorphism
+
+Ex: Overloading , method overloading , constructor overloading , operator overloading.
+
+Operator overloading 
+s1 = "hello"  , s2 ="world"
+
+ s1 + s2;
+
+n1 = 10  , n2 =20
+
+
+n1 + n2;
+
+
+2. dynamic or runtime  polymorphism (inheritance is mandatory)
+Ex:
+1. method overriding 
+2. Parent ref variable holds child class object
+Ex:  Object  o  = new Object();
+     Object  o  =  new Machine();
+    Object  o = new Printer();
+
+
+
+
+
+
+
+
+
+Access Modifiers:
+------------------
+
+<default>
+private
+public
+protected
+
+
+We can use them for variables,methods,construtors,enums,interfaces,classes,records
+
+default:
+--------
+ class  Demo{  // with in a package
+
+
+ }
+
+private
+--------
+ class  Demo{  
+
+	private int id;  // with in a class/file
+
+ }
+
+public
+--------
+public class  Demo{  // global , public members can be accessible any where in project
+
+
+ }
+
+
+protected:
+-----------
+
+i. act as a default
+
+pack1;
+  class A {
+	protected void m1(){....}  // by default act as default
+
+  }
+
+pack2;
+
+   class B{
+
+	}
+
+ii. act as a public
+
+
+pack1;
+public  class A {
+	protected void m1(){....}  // by default act as default
+
+  }
+
+pack2;
+
+public   class B extends A{ // inheritance 
+
+		m1();  //act as  public 
+
+	}
+
+
+
+more access modifier:
+-----------------------
+static :
+variables,methos, classes
+
+InnerClass:
+
+class A {
+
+	static class B {
+		static m1(){....}
+
+	}
+
+
+}
+
+A.B.m1();
+
+---------------------
+final access modifier
+variable:
+final int X = 90;  // cannot be modified or re-initialize
+	
+
+final class or method:
+
+final class A {
+
+	final void m1(){
+		// logic-1
+	}
+}
+
+class B extends A{ // invalid final class A cannot be extended
+
+
+	void m1(){  //final m1() cannot be overriden invalid or not possible
+		//logic-2
+	}
+
+
+}
+
+
