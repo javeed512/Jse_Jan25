@@ -9,6 +9,13 @@ public class BankImp2 extends BankImp1{
 
 	@Override
 	public void withdraw() {
+		
+		BankImp2 b = new BankImp2();
+		
+		b.loginAuth();
+		
+	
+		
 
 		System.out.println("Withdraw successful...");
 		

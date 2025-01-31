@@ -12,5 +12,17 @@ public interface IBank {
 	
 	public abstract  void deposit();
 	  void withdraw();
+	  
+	  public default void loginAuth() {
+		  
+		  System.out.println("Login success...");
+		  
+	  }
+	  
+	  public  static  void  showIFSC() {
+		  
+		  System.out.println(IFSC);
+		  
+	  }
 
 }

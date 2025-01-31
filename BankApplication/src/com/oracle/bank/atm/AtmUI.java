@@ -12,6 +12,9 @@ public class AtmUI {
 	public static void main(String[] args) {
 
 		boolean flag = true;
+		
+		IBank.showIFSC();
+		
 
 		IBank bank = Util.getObject(); // abstraction
 
