@@ -1,0 +1,97 @@
+
+Abstract class:
+----------------
+
+
+abstract class Shape{ // object cannot be created
+
+	public void draw(){
+	
+	// common logic needs by all developers
+	}
+
+	public abstract float area(); // abstract method
+
+
+}
+
+public class  Square extends Shape{
+
+
+	public static void main(){
+	
+		Square square = new Square();
+
+		square.draw();
+	}
+
+	public float area(){
+		//logic of find area of square
+	}
+	
+
+}
+
+
+public class Rectangle  extends Shape{
+
+	main(){
+		
+		Rectangle rectangle = new Rectangle();	
+			rectangle.draw();
+
+	}
+	public float area(){
+		//logic of find area of rectangle
+	}
+
+}
+
+
+
+
+------------------------------------------------------
+
+Interface:
+
+User Interface : It is a medium to communicate or access set of services from the system/application.
+
+Developers: Interface is  a specification or requirement which developers needs to implement.
+
+
+
+Abstraction:  Highlighting set of services to the end user and hiding the implementation code is known as 		abstraction.
+
+
+Abstraction can be implemented by using interfaces and concrete/abstract classes.
+
+public interface IBank{
+	
+	void deposit();
+	void withdraw();
+
+
+}
+
+public abstract  class BankImp1  implements  IBank{
+
+	public void deposit(){
+
+			
+	}
+
+
+}
+public  class  BankImp2  extends BankImp1{
+
+		public  void withdraw(){
+
+		}
+
+}
+
+Note: Interface reference can hold its implementation class object.
+
+ IBank  b = new BankImp2();
+
+
