@@ -1,0 +1,114 @@
+
+interfaces 
+I1 , I2 , I3 
+
+public interface I1 extends I2 , I3{
+
+
+}
+
+
+
+
+int ar = new int[100]; // 20 elements stored
+
+Array limitations:
+
+1. array size is fixed.  
+2. store only homogenous or similar type of elements
+3. type casting is not possible
+4. does not allow to use different DS.
+
+
+
+java.util.*;
+
+Collections API
+
+Interfaces:
+Collection
+List
+Set
+Queue
+
+Map
+
+Classes:
+--------
+ArrayList
+LinkedList
+Stack
+
+HashSet
+TreeSet
+
+HashMap
+TreeMap
+
+
+
+Generic Data Types
+
+  ClassName<GenericDT>
+
+eX:  ArrayList<Integer>
+
+      HashSet<String>
+
+    ArrayList<Object>
+    
+
+Important Collection Types or classes
+
+List family common features:
+
+-> Allows Duplicate values
+-> Allows null value
+-> Allow same or diff type of elements
+-> Insertion order is preserved
+
+1. ArrayList
+-> It uses Resizable array DS
+-> It is good for fetching data faster
+
+2.LinkedList
+It is same as ArrayList 
+
+But,
+It use  Doubly Linked List DS
+It is used for faster insert or delete operation
+
+
+
+
+Set Family common features:
+---------------------------
+-> Does not allow duplicate
+-> null is allowed
+-> Insertion order is not preserved
+
+HashSet:
+-> DS is Hashtable 
+-> Insertion order is based on object hashcode (Hashing)
+
+
+TreeSet:
+-> DS is  Tree 
+-> null is allowed if its only value
+-> It does not allow Hetegenous elements or different type of elements
+-> Insertion order is based on Natural order
+
+
+Map Family:
+===========
+
+  Map  =  Set + List
+
+ HashMap<K,V>  ---> HashSet  + ArrayList
+
+key - cannot be duplicate
+value - can be duplicate
+
+
+
+
